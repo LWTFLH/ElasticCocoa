@@ -33,7 +33,7 @@ class ElasticTextField: UITextField {
         
         // B
         elasticView = ElasticView(frame: bounds)
-        elasticView.backgroundColor = UIColor.redColor()
+        elasticView.backgroundColor = UIColor.purpleColor()
         addSubview(elasticView)
         
         // C

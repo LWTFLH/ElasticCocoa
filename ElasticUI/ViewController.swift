@@ -15,6 +15,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     let elatis = ElasticTextField(frame: CGRectMake(0,0,200,30))
     elatis.center = self.view.center
+    elatis.backgroundColor = UIColor.purpleColor()
     elatis.delegate  = self
     self.view.addSubview(elatis)
     
@@ -33,14 +34,15 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     func textFieldShouldEndEditing(textField: UITextField) -> Bool {
        
-        if textField.text?.characters.count == 5 {
-            return false
-            
-        }else{
-        
-            return true
-        }
-    
+        return true
+//        if textField.text?.characters.count == 5 {
+//            return false
+//            
+//        }else{
+//        
+//            return true
+//        }
+//    
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
